@@ -460,15 +460,13 @@ background-color: var(--light-background);
 .customers-item {
     width: calc((100% - 120px) / 6);
     height: 88px;
-    
-
-}
+    }
 
 .client-link {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 88px;
+    height: 100%;
     border: 1px solid var(--helper-text);
     border-radius: 4px;
 }
@@ -539,11 +537,16 @@ background-color: var(--overlays-shadows-headings);
 
 }
 
+.socnetwork-item-footer {
+    width: 40px;
+    height: 40px;
+}
+
 .socnetwork-link.footer {
     background: rgba(255, 255, 255, 0.1);
     border-radius: 50%;
-    width: 40px;
-    height: 40px;
+    width: 100%;
+    height: 100%;
 }
 
 .socnetwork-link.footer:is(:hover, :focus) {
@@ -553,6 +556,7 @@ background-color: var(--overlays-shadows-headings);
 
 .footer-container {
     display: flex;
+    align-items: baseline;
 }
 
 .footer-content {
@@ -629,10 +633,11 @@ margin-bottom: 72px;
 
 
 .card-link {
-    color: var(--header-text)
+    display: block;
+    
 }
 
-.card:is(:hover, :focus) {
+.card-link:hover {
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
 
@@ -656,6 +661,8 @@ margin-bottom: 72px;
     line-height: 1,2;
     letter-spacing: 0.02em;
     margin-bottom: 8px;
+
+    color: var(--header-text);
 }
 
 .card-text {
